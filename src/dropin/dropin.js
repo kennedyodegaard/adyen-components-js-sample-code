@@ -7,6 +7,9 @@ getClientKey().then(clientKey => {
             clientKey: clientKey, // Mandatory. clientKey from Customer Area
             paymentMethodsResponse,
             removePaymentMethods: ['paysafecard', 'c_cash'],
+            showStoredPaymentMethods: false,
+            showRemovePaymentMethodButton: true,
+            showPayButton: false,
             onChange: state => {
                 updateStateContainer(state); // Demo purposes only
             },

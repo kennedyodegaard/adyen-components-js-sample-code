@@ -13,8 +13,10 @@
         <div class="main">
             <div class="checkout-container">
                 <a href="../">Back</a>
-
-                <h1>Drop-in</h1>
+                <div class="checkout-header">
+                  <h1>Payments processed with</h1>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Adyen_Corporate_Logo.svg/1200px-Adyen_Corporate_Logo.svg.png" alt="adyen_logo" width="200">
+                </div>
                 <div class="payment-method">
                     <div id="dropin-container">
                         <!-- Drop-in will be rendered here -->
@@ -45,7 +47,6 @@
     clientKey: 'test_...',
     paymentMethodsResponse: { ... }
 });
-
 const dropin = checkout
     .create('dropin', {
         onSubmit: (state, dropin) => {}

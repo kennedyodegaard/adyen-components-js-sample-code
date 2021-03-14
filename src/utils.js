@@ -13,7 +13,7 @@ const paymentsDefaultConfig = {
     reference: 'Checkout Components sample code test',
     countryCode: 'NL',
     channel: 'Web',
-    returnUrl: 'https://your-company.com/',
+    returnUrl: 'https://docs.adyen.com/',
     amount: {
         value: 1000,
         currency: 'EUR'
@@ -81,7 +81,7 @@ const getOriginKey = () =>
         })
         .catch(console.error);
 
-// Fetches a clientKey from the 
+// Fetches a clientKey from the
 const getClientKey = () =>
     httpPost('clientKeys')
         .then(response => {
